@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cad-mesh-analyzer"
+version = "0.1.0"
+authors = [
+    { name = "Hasan Alkan" }
+]
+description = "Open-source Python toolkit and CLI for automated 3D CAD/STL mesh validation, manifold geometry checks, and FEA pre-processing automation."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.scripts]
+cad-mesh-analyzer = "analyzer:main"
